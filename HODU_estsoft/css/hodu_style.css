@@ -5,7 +5,6 @@ body{
   padding:0;
 }
 .for-align{
-
   padding-left:15%;
   padding-right:15%;
 }
@@ -121,7 +120,6 @@ button{
 
 .article1{
   display: flex;
-  width:100%;
   flex-direction:column;
   align-items: center;
   text-align: center;
@@ -139,6 +137,7 @@ button{
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+
 }
 .article1 p>span{
   color:#D97652;
@@ -147,14 +146,29 @@ article h3{
   font-weight: 700;
   font-size: 24px;
 }
-.article-img-cell{
- display:flex;
-  list-style-type: none;
-}
-.article-img-cell img{
-  height:100%;
 
+.article-image-list{
+  display: flex;
+  flex-direction: column;
+  gap:72px;
 }
+
+.article-img-cell{
+  display:flex;
+  list-style-type: none;
+  justify-content: center;
+  gap:72px;
+  margin:0;
+}
+
+.article-img{
+  width:378px;
+  height:378px;
+  border-radius:30px;
+  object-fit: cover;
+}
+
+
 
 
 .article-map{
@@ -164,7 +178,7 @@ article h3{
 
 }
 
-.article-map header{
+.article-map h2{
   font-weight: 700;
   font-size:36px;
 }
@@ -224,12 +238,19 @@ article h3{
 }
 
 .thank-you-popup{
-  display:flex;
+  display:none;
   flex-direction: column;
   align-items: center;
+  margin: 0 auto;
   width:600px;
   height:400px;
-  background-image: url("./HODU_estsoft/");
+  position:relative;
+  bottom: -320px;
+  margin-top: -320px;
+  z-index: 5;
+  border-radius:30px;
+  background-image: url("../img/popup-background.png");
+  z-index: 2;
 }
 
 
